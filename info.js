@@ -1,20 +1,24 @@
 window.htmlTemplate1 = `
-<div class="product">
+ <div class="product card col-md-2">
     <a href="{{product_url}}">
-        <img src="{{image}}" alt="{{prod_name}}">
-        <div class="title">{{prod_name}}</div>
-        <div class="title">{{short_description}}</div>
-        <div class="price">{{currency_symbol}}{{price}}</div>    
+        <img src="{{image}}" class="card-img-top" alt="{{prod_name}}">
+        <div class="card-body">
+          <h4 class="card-title">{{prod_name}}</h4>
+          <h5 class="card-title">{{short_description}}</h5>
+          <h6 class="card-text">{{currency_symbol}}{{price}}</h6>
+        </div>    
     </a>
 </div>
 `
 
 window.htmlTemplate2 = `
-<div class="product">
+ <div class="product card col-md-2">
     <a href="{{product_url}}">
-        <img src="{{image}}" alt="{{prod_name}}">
-        <div class="title">{{prod_name}} - {{manufacturer}}</div>
-        <div class="price">{{currency_symbol}}{{price}}</div>    
+        <img src="{{image}}" class="card-img-top" alt="{{prod_name}}">
+        <div class="card-body">
+          <h4 class="card-title">{{prod_name}} - {{manufacturer}}</h4>
+          <h6 class="card-text">{{currency_symbol}}{{price}}</h6>    
+        </div>
     </a>
 </div>
 `
